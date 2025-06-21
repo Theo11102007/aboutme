@@ -132,9 +132,9 @@ img, table, div, section, article {
     padding-top: 15px;
   }
   /* Responsive */
-  @media (max-width: 900px) {
+  @media (max-width: 1080px) {
     .menu {
-      padding-left: 40vh;
+      padding-left: 60vh;
     }
     .menu a {
       font-size: 18px;
@@ -146,16 +146,25 @@ img, table, div, section, article {
       left: 10vw;
     }
   }
-  @media (max-width: 768px){
+  @media (max-width: 800px){
     .menu {
-      padding-left: 10vh;
+      padding-left: 50vh;
     }
     .kotak {
       left: 5vw;
+      top: 0px;
+    }
+    .nama {
+      margin-right: 30vw;
     }
     .profil {
-      height: 300;
-      width: 300;
+      height: 250px;
+      width: 250px;
+    }
+    .lingkaran {
+      width: 260px;
+      height: 260px;
+      top: -230px;
     }
   }
   @media (max-width: 425px){
@@ -197,6 +206,7 @@ img, table, div, section, article {
     }
     .nama {
       font-size: 30px;
+      margin-right: 0vw;
     }
     .halo {
       font-size: 20px;
