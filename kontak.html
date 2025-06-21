@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Theo</title>
+  <link rel="stylesheet" href="kontak.css">
+  
+</head>
+<body>
+  <nav>
+    <div class="porto">Portofolio</div>
+    <div class="menu">
+      <a href="index.html">Home </a>
+        
+      <a href="about.html">About</a>
+      <a href="pengalman.html">Pengalaman </a>
+          
+      <a href="kontak.html">
+          <div class="posisi">Kontak</div>
+      </a>
+    </div>
+  </nav>
+  <div class="kotak3">
+    <p class="kontak">KONTAK SAYA</p>
+    <p class="sub"> "Ada yang bisa saya bantu? Jangan sungkan untuk menghubungi kami!,
+      Kami senang mendengar dari Anda dan akan merespons secepat mungkin."
+    </p>
+    <form id="contact-form" >
+      <label>Nama:</label>
+      <input type="name" name="name" required>
+      <label>Email:</label>
+      <input type="email" name="email" required>
+      <label>Pesan:</label>
+      <textarea name="message" required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+    <div class="kotak4">
+      <div class="text">= 088218007960</div>
+      <div class="text">= theopc2007@gmail.com</div>
+      <img src="foto/kontak.png" alt="kontak" class="logo">
+       
+      <img src="foto/gmail.png" alt="email" class="gmail">
+    </div>
+    
+    <div class="list">
+      <a href="http://">
+        <img src="foto/ig.png" alt="ig" class="foto">
+      </a>
+      <a href="http://">
+        <img src="foto/tiktok.png" alt="tiktok" class="foto">
+      </a>
+      <a href="http://">
+        <img src="foto/wa.png" alt="wa" class="foto">
+      </a>
+      
+    </div>
+  </div>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init('hMb6ZyzkuN-zuWPPS'); // Ganti dengan User ID dari EmailJS dashboard
+    })();
+
+    window.onload = function() {
+      document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        emailjs.sendForm('service_Theo07', 'template_qkotf6a', this)
+          .then(function() {
+            alert('Pesan berhasil dikirim!');
+            document.getElementById('contact-form').reset();
+          }, function(error) {
+            alert('Gagal mengirim pesan: ' + JSON.stringify(error));
+          });
+      });
+    }
+  </script>
+  <script>
+    // Mendapatkan tanggal hari ini dalam format YYYY-MM-DD
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('tanggal').value = today;
+  </script>
+
+
+
+<footer>
+  <div class="kotak2">
+    <div class="copyright">" © Copyright - Solo Designer 2025 | Design By : <a href="https://www.instagram.com/theo_ajah_2007/">Theodorus
+  </div>
+</footer>
+</body>
+</html>

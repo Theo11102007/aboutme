@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Theo</title>
+  <link rel="stylesheet" href="pengalaman.css">
+</head>
+<body>
+  <nav>
+    <div class="porto">Portofolio</div>
+    <div class="menu">
+      <a href="index.html">Home </a>
+        
+      <a href="about.html">About</a>
+      <a href="pengalman.html">
+          <div class="posisi">Pengalaman</div>
+      </a>
+      <a href="kontak.html">Kontak</a>
+    </div>
+  </nav>
+  <div class="judulutama">EXPERIENCE / PENGALAMAN</div>
+  <div class="container">
+    <div class="card">
+      <img src="foto/cobelco.jpg" alt="gambar" class="card-img">
+      <div class="card-content">
+        <div class="card-title">COBELCO SK200</div>
+        <div class="card-desc" id="desc1">
+          Mesin Excavator Cobelco SK200 mengalami kerusakan karena air masuk keruang bakar atau bahasa mekanniknya Water Hammer.
+
+        </div>
+      </div>
+      <button class="card-plus" aria-label="Lihat lebih banyak" onclick="toggleDesc('desc1', this)">+</button>
+    </div>
+    <div class="card">
+      <img src="foto/motor.jpg" alt="gambar" class="card-img">
+      <div class="card-content">
+        <div class="card-title">OVERHULL MOTOR</div>
+        <div class="card-desc" id="desc2">
+          overhull Motor Suzuki Thunder125 karena ngempos atau tidak bertenaga.
+          penyebab masalahnya saat sudah melakukan trouble shooting adalah klep yang sudah tidak rapat dan ring piston sudah aus.
+          Perbaikanya dengan mengganti ring piston dan menyekir klep sampai rapat kembali
+        </div>
+      </div>
+      <button class="card-plus" aria-label="Lihat lebih banyak" onclick="toggleDesc('desc2', this)">+</button>
+    </div>
+    <div class="card">
+      <img src="foto/mobil.jpeg" alt="gambar" class="card-img">
+      <div class="card-content">
+        <div class="card-title">GANTI BUSI</div>
+        <div class="card-desc" id="desc3">
+          Pengantian busi mobil Xenia 2013 1000cc. saat mobil dipakai tiba tiba mobil bergetar tidak normal dan tenaganya
+          hilang disertai lampu cek engine menyala karena salah satu busi mati menjadikan mesin mobil tidak imbang dan bergetar hebat.
+          Perbaikanya melakukan pergantian busi.
+        </div>
+      </div>
+      <button class="card-plus" aria-label="Lihat lebih banyak" onclick="toggleDesc('desc3', this)">+</button>
+    </div>
+    <div class="card">
+      <img src="foto/genset.jpeg" alt="gambar" class="card-img">
+      <div class="card-content">
+        <div class="card-title">TROUBLE SHOOTING GENSET </div>
+        <div class="card-desc" id="desc4">
+          ILorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        </div>
+      </div>
+      <button class="card-plus" aria-label="Lihat lebih banyak" onclick="toggleDesc('desc4', this)">+</button>
+    </div>
+    <div class="card">
+      <img src="foto/AE.jpeg" alt="gambar" class="card-img">
+      <div class="card-content">
+        <div class="card-title">TEST ENGINE AE</div>
+        <div class="card-desc" id="desc5">
+          Tes Engine AE (Auxiliry Engine). Melakukan tes Engine saat sesudah di overhull, 
+          Selama 12 sampai 24jam AE di nyalakakan dan sambil dibebani 
+        </div>
+      </div>
+      <button class="card-plus" aria-label="Lihat lebih banyak" onclick="toggleDesc('desc5', this)">+</button>
+    </div>
+    <div class="card">
+      <img src="foto/mainengine.jpeg" alt="gambar" class="card-img">
+      <div class="card-content">
+        <div class="card-title">ME KEMASUKAN AIR</div>
+        <div class="card-desc" id="desc6">
+          ME (Main Engine) sebuah kapal kemasukan air karena keong turbo dan exhaust manifold
+          keropos dan karatan karena usia dan dipercepat dengan uap air laut menjadikan keong turbo dan exhaust manifold lebih cepat keropos.
+          Perbaikanya dengan mengganti keong turbo dan exhaust manifold.
+          <br>kontribusi saya : <br> membantu bongkar pasang,membuat kunci sepsial
+        </div>
+      </div>
+      <button class="card-plus" aria-label="Lihat lebih banyak" onclick="toggleDesc('desc6', this)">+</button>
+    </div>
+    <div class="card">
+      <img src="foto/loader.jpg" alt="gambar" class="card-img">
+      <div class="card-content">
+        <div class="card-title">LOADER WATER HAMMER</div>
+        <div class="card-desc" id="desc7">
+          ILorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        </div>
+      </div>
+      <button class="card-plus" aria-label="Lihat lebih banyak" onclick="toggleDesc('desc7', this)">+</button>
+    </div>
+  </div>
+
+  <script>
+    function toggleDesc(id, btn) {
+      const desc = document.getElementById(id);
+      desc.classList.toggle('expanded');
+      btn.textContent = desc.classList.contains('expanded') ? '−' : '+';
+    }
+  </script>
+
+  <div class="kotak2">
+    <div class="copyright">" © Copyright - Solo Designer 2025 | Design By : <a href="https://www.instagram.com/theo_ajah_2007/">Theodorus
+  </div>
+</footer>
+</body>
+</html>
