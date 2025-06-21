@@ -165,13 +165,14 @@ html, body {
         left: 10vw;
       }
     }
-    @media (max-width: 768px){
+    @media (max-width: 800px){
       .menu {
-        padding-left: 10vh;
+        padding-left: 50vh;
       }
       .kotak {
         left: 5vw;
       }
+      
     }
     @media (max-width: 425px){
       nav {
