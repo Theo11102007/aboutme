@@ -218,16 +218,31 @@ html, body {
       .sub {
         font-size: 15px;
         top: -30px;
-        padding: 10px 20x 10px 20px; 
+        padding: 10px 10x 10px 10px; 
         position: relative;
       }
       .text {
         font-size: 15px;
-        margin: 10px 40px 25px 40px;
+        text-align: left;
+        
       }
-      .logo, .gmail {
+      .kotak4 {
+        
+        left: 0px;
+        top: -330px;
+        width: 300px;
+      }
+      .logo{
+        width: auto;
+        height: 35px;
+        top: -110px;
+        left: 25px;
+      } 
+      .gmail {
         width: auto;
         height: 30px;
+        left: -20px;
+        top: -55px;
       }
       .kotak3 {
         height: 700px;
@@ -237,8 +252,11 @@ html, body {
         text-decoration: underline 5px rgb(153, 126, 7) ;
       }
       .list {
-        margin-left: 20px;
-        padding-top: 10px;
+        margin: 0px;
+        left: 10px;
+        top: -330px;
+        position: relative;
+        gap: 5px;
       }
       form {
         left: 5px;
@@ -253,3 +271,4 @@ html, body {
       }
     }
   
+
