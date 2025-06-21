@@ -18,8 +18,8 @@ span, p, h2 {
   height: 50px;
   width: 100%;
   background: black;
-  top: 70px;
-  position: absolute;
+  top: 100%;
+  position: relative;
   top: 45vw;
 }
 .copyright {
