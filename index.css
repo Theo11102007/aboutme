@@ -176,6 +176,42 @@ img, table, div, section, article {
     .copyright {
       font-size: 15px;
     }
+    .lingkaran {
+      left: 20%;
+      width: 250px;
+      height: 250px;
+      top: -250px;
+      position: relative;
+    }
+    .profil {
+      width: 240px;
+      height: 240px;
+     
+    }
+    .kotak {
+      width: 400px;
+      left: 10%;
+      top: 230px;
+    }
+    .nama {
+      font-size: 30px;
+    }
+    .halo {
+      font-size: 20px;
+    }
+    .copyright {
+      font-size: 12px;
+    }
+  }
+  @media (max-width: 375px){
+    .kotak{
+      left: 5%;
+    }
+    .lingkaran {
+      left: 15%;
+    }
+
+
   }
   @media (max-width: 325px){
     .menu {
