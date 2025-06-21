@@ -257,6 +257,11 @@ nav {
       font-size: 18px;
     }
 }
+@media (max-width: 800px) {
+  .menu {
+    padding-left: 50vh;
+  }
+}
 @media (max-width: 600px){
     .menu {
       padding-left: 10vh;
